@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐！</title>
+  <style>
+    /* 整体页面布局和背景设置 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      background-image: url('https://example.com/background-pattern.jpg'); /* 替换为合适的背景纹理图片链接 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* 标题样式 */
+    h1 {
+      color: #ff69b4;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    /* 段落文本样式 */
+    p {
+      font-size: 20px;
+      color: #333;
+      line-height: 1.6;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    /* 生日蛋糕图片容器样式 */
+   .birthday-cake {
+      width: 300px;
+      height: 300px;
+      background-image: url('https://example.com/birthday-cake-image.jpg'); /* 替换为真实漂亮的生日蛋糕图片链接 */
+      background-size: cover;
+      margin: 30px 0;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    /* 鼠标悬停在生日蛋糕图片上的效果 */
+   .birthday-cake:hover {
+      transform: scale(1.1);
+    }
+
+    /* 祝福语列表样式 */
+   .wishes-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    /* 每条祝福语的样式 */
+   .wishes-list li {
+      font-size: 22px;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    /* 每条祝福语前的装饰图标样式 */
+   .wishes-list li::before {
+      content: "\2728"; /* 这里使用的是星星图标，可根据喜好替换其他Unicode图标 */
+      font-size: 30px;
+      color: #ffd700;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+
+    /* 播放音乐按钮样式 */
+   .music-button {
+      background-color: #009688;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 30px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    /* 播放音乐按钮悬停效果 */
+   .music-button:hover {
+      background-color: #00796b;
+    }
+
+    /* 音乐播放器样式（隐藏默认样式） */
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>生日快乐！CSQ</h1>
+  <div class="birthday-cake"></div>
+  <p>在这个特别的日子里，愿你被满满的幸福环绕，所有的美好都如期而至。</p>
+  <p>每一年的成长都是一次珍贵的旅程，你在这一路上留下的每一个脚印都闪耀着独特的光芒。希望新的一岁，你能继续追逐自己的梦想，无惧风雨，勇往直前。</p>
+  <ul class="wishes-list">
+    <li>愿你的生活如同一幅绚丽多彩的画卷，每一天都描绘着不同的精彩。</li>
+    <li>希望你总能遇到那些温暖人心的人和事，让你的笑容永远灿烂如阳。</li>
+    <li>愿健康与快乐常伴你左右，任何烦恼都能在瞬间烟消云散。</li>
+    <li>期待你在新的一岁里，收获满满的惊喜和无尽的爱。</li>
+  </ul>
+  <button class="music-button" onclick="playMusic()">播放生日歌</button>
+  <audio id="birthday-song" src="https://example.com/birthday-song.mp3"> /* 替换为真实的生日歌音频链接 */
+  </audio>
+
+  <script>
+    function playMusic() {
+      var audio = document.getElementById('birthday-song');
+      audio.play();
+    }
+  </script>
+</body>
+
+</html>
