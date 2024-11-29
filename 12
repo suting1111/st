@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐！</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff69b4;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #333;
+      line-height: 1.6;
+      max-width: 600px;
+      text-align: center;
+    }
+
+  .birthday-cake {
+      width: 300px;
+      height: 300px;
+      margin: 30px 0;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+  .birthday-cake:hover {
+      transform: scale(1.1);
+    }
+
+  .wishes-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+  .wishes-list li {
+      font-size: 22px;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: left;
+      padding-left: 30px;
+      position: relative;
+    }
+
+  .wishes-list li::before {
+      content: "\2728";
+      font-size: 30px;
+      color: #ffd700;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>生日快乐！[对方名字]</h1>
+  <div class="birthday-cake"></div>
+  <p>亲爱的[对方名字]，在这个特别的日子里，愿你被满满的幸福环绕，所有的美好都如期而至。</p>
+  <p>每一年的成长都是一次珍贵的旅程，你在这一路上留下的每一个脚印都闪耀着独特的光芒。希望新的一岁，你能继续追逐自己的梦想，无惧风雨，勇往直前。</p>
+  <ul class="wishes-list">
+    <li>愿你的生活如同一幅绚丽多彩的画卷，每一天都描绘着不同的精彩。</li>
+    <li>希望你总能遇到那些温暖人心的人和事，让你的笑容永远灿烂如阳。</li>
+    <li>愿健康与快乐常伴你左右，任何烦恼都能在瞬间烟消云散。</li>
+    <li>期待你在新的一岁里，收获满满的惊喜和无尽的爱。</li>
+  </ul>
+</body>
+
+</html>
